@@ -8,10 +8,8 @@
 
 namespace models;
 
-
 class Driver
 {
-
     public const _AVAILABLE = 1;
     public const UNAVAILABLE = 0;
 
@@ -46,12 +44,10 @@ class Driver
     {
         $this->card_id = $card_id;
         return $this;
-
     }
 
     public function getCardId()
     {
         return $this->card_id;
     }
-
 }

@@ -9,8 +9,7 @@ class PushMessage
     /**
      * @param Service $service
      */
-    public function execute(Service $service){
-
+    public function execute(Service $service)
+    {
     }
-
 }

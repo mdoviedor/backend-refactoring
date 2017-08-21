@@ -2,7 +2,6 @@
 
 namespace api;
 
-
 use api\presentators\JsonView;
 use domain\PushMessage;
 use models\Service;
@@ -37,7 +36,6 @@ class Code
      */
     public function __construct(ServiceRepository $serviceRepository, DriverRepository $driverRepository, PushMessage $pushMessage)
     {
-
         $this->serviceRepository = $serviceRepository;
         $this->driverRepository = $driverRepository;
         $this->pushMessage = $pushMessage;
@@ -94,5 +92,4 @@ class Code
         }
         return false;
     }
-
 }

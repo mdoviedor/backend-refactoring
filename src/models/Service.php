@@ -8,7 +8,6 @@ namespace models;
  */
 class Service
 {
-
     public const CONFIRMED = 2;
     public const UNCONFIRMED = 1;
 
@@ -33,7 +32,6 @@ class Service
     {
         $this->card_id = $card_id;
         return $this;
-
     }
 
     /**
@@ -72,5 +70,4 @@ class Service
 
         return $this;
     }
-
 }

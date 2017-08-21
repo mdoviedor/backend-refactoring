@@ -15,7 +15,6 @@ class ServiceRepository
     public function findById(int $serviceId): ? Service
     {
         return new Service();
-
     }
 
     public function driverConfirmedService(Service $service, Driver $driver)
@@ -23,12 +22,10 @@ class ServiceRepository
         $service->setDriver($driver)
             ->setStatusId(Service::CONFIRMED)
             ->setCardId($driver->getCardId());
-
     }
 
     public function doPushMessage(Service $service)
     {
         \error_log('Enviando mensaje');
     }
-
 }

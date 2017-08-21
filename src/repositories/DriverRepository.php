@@ -12,7 +12,6 @@ class DriverRepository
      */
     public function setNotAvilable(Driver $driver)
     {
-
     }
 
     /**
@@ -23,5 +22,4 @@ class DriverRepository
     {
         return new Driver();
     }
-
 }

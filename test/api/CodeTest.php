@@ -8,7 +8,6 @@
 
 namespace test\api;
 
-
 use api\Code;
 use domain\PushMessage;
 use models\Driver;
@@ -25,7 +24,6 @@ use Symfony\Component\HttpFoundation\Request;
  */
 class CodeTest extends TestCase
 {
-
     public function test_not_found_service()
     {
         $serviceRepository = $this->createMock(ServiceRepository::class);
@@ -78,7 +76,6 @@ class CodeTest extends TestCase
         $this->assertInstanceOf(JsonResponse::class, $response);
         $this->assertEquals(2, json_decode($response->getContent())->error);
         $this->assertEquals(202, $response->getStatusCode());
-
     }
 
     public function test_service_already_confirmed()
@@ -108,7 +105,6 @@ class CodeTest extends TestCase
         $this->assertInstanceOf(JsonResponse::class, $response);
         $this->assertEquals(1, json_decode($response->getContent())->error);
         $this->assertEquals(202, $response->getStatusCode());
-
     }
 
     public function test_unconfirmed_service()
@@ -155,7 +151,5 @@ class CodeTest extends TestCase
         $this->assertInstanceOf(JsonResponse::class, $response);
         $this->assertEquals(0, json_decode($response->getContent())->error);
         $this->assertEquals(202, $response->getStatusCode());
-
     }
-
 }
